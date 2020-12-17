@@ -18,7 +18,7 @@ const Nav: React.FC = () => {
       </StyledLink>
       <StyledLink
         target="_blank"
-        href="https://etherscan.io/address/0x3b74fC995685877028e1b78b185415fc8A86A1e7#code"
+        href="https://etherscan.io/address/0x070Dd12f34DFB926fc5e460e6a5fd9EE530486E6#code"
       >
         Swap Contract
       </StyledLink>
