@@ -117,7 +117,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x3b74fc995685877028e1b78b185415fc8a86a1e7',
     },
-    name: 'Hyfi',
+    name: 'HyFi',
     symbol: 'WPP-HYFI UNI-V2 LP',
     tokenSymbol: 'HYFI',
     icon: '💵',
@@ -130,7 +130,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0x3b74fc995685877028e1b78b185415fc8a86a1e7',
     },
-    name: 'Hyfi',
+    name: 'HyFi',
     symbol: 'HYFI-USDT UNI-V2 LP',
     tokenSymbol: 'HYFI',
     icon: '🏦',

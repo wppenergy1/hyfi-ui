@@ -20,7 +20,7 @@ const Swap: React.FC = () => {
           <PageHeader
             icon={<img src={wpp} height={120} />}
             // title="Swap Old WPP to New WPP"
-            subtitle="Stake New wpp on uniswap to get the LP token and stake on Hyfi!"
+            subtitle="Stake New wpp on uniswap to get the LP token and stake on HyFi!"
           />
 
           <Stake tokenName="WPP-V1" />

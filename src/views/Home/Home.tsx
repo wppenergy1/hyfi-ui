@@ -13,8 +13,8 @@ const Home: React.FC = () => {
     <Page>
       <PageHeader
         icon={<img src={chef} height={120} />}
-        title="$Hyfi is money that works for you."
-        subtitle="Stake Uniswap LP tokens to claim your very own Hyfi!"
+        title="$HyFi is money that works for you."
+        subtitle="Stake Uniswap LP tokens to claim your very own HyFi!"
       />
 
       <Container>
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       {/* <StyledInfo>
-        🏆<b>Pro Tip</b>: Hyfi-ETH UNI-V2 LP token pool yields TWICE more token
+        🏆<b>Pro Tip</b>: HyFi-ETH UNI-V2 LP token pool yields TWICE more token
         rewards per block.
       </StyledInfo> */}
       <Spacer size="lg" />

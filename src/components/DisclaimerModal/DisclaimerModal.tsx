@@ -28,7 +28,7 @@ const DisclaimerModal: React.FC<DisclaimerModal> = ({
         <div>
           <p>Audits: None.</p>
           <p>
-            While the initial creators of the Hyfi-WPP protocol have made
+            While the initial creators of the HyFi-WPP protocol have made
             reasonable efforts to attempt to ensure the security of the
             contracts, including forking much of the codebase from existing
             well-audited projects and soliciting review from friends, nothing
@@ -44,9 +44,9 @@ const DisclaimerModal: React.FC<DisclaimerModal> = ({
     } else {
       return (
         <div>
-          <p>Attention Hyfi Uniswap LPs</p>
+          <p>Attention HyFi Uniswap LPs</p>
           <p>
-            The only Uniswap pool that is compatible with Hyfi is Hyfi/yCRV
+            The only Uniswap pool that is compatible with HyFi is HyFi/yCRV
             (Curve yPool tokens)
           </p>
           <p>Providing liquidity for other Uniswap pools is dangerous</p>

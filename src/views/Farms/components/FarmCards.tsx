@@ -29,7 +29,7 @@ const FarmCards: React.FC = () => {
   const stakedValue = useAllStakedValue()
 
   const sushiIndex = farms.findIndex(
-    ({ tokenSymbol }) => tokenSymbol === 'Hyfi',
+    ({ tokenSymbol }) => tokenSymbol === 'HyFi',
   )
 
   const sushiPrice =
@@ -38,7 +38,7 @@ const FarmCards: React.FC = () => {
       : new BigNumber(0)
 
   const BLOCKS_PER_YEAR = new BigNumber(2336000)
-  const Hyfi_PER_BLOCK = new BigNumber(useCurrentReward())
+  const HyFi_PER_BLOCK = new BigNumber(useCurrentReward())
 
   const rows = farms.reduce<FarmWithStakedValue[][]>(
     (farmRows, farm, i) => {
@@ -53,7 +53,7 @@ const FarmCards: React.FC = () => {
         ...stakedValue[i],
         apy: stakedValue[i]
           ? sushiPrice
-              .times(Hyfi_PER_BLOCK)
+              .times(HyFi_PER_BLOCK)
               .times(BLOCKS_PER_YEAR)
               .times(stakedValue[i].poolWeight)
               .div(stakedValue[i].totalWethValue)
@@ -135,7 +135,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.tokenSymbol === 'Hyfi' && <StyledCardAccent />}
+      {farm.tokenSymbol === 'HyFi' && <StyledCardAccent />}
       <Card>
         <StyledPoolWeight>
           {farm.poolWeight
