@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ed77a5f583101057687a4dd3a49e7a27",
+    "revision": "d9fe59a97e6acc0c463b5e4ea4ff8924",
     "url": "/index.html"
   },
   {
-    "revision": "bdc9ae87cba31a8610c5",
+    "revision": "de298d74a83c02dd45cd",
     "url": "/static/css/main.9e8854b3.chunk.css"
   },
   {
@@ -68,16 +68,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/9.5f7d0c8c.chunk.js"
   },
   {
-    "revision": "bdc9ae87cba31a8610c5",
-    "url": "/static/js/main.90767b0e.chunk.js"
+    "revision": "de298d74a83c02dd45cd",
+    "url": "/static/js/main.cab288da.chunk.js"
   },
   {
     "revision": "a2cfa4eb9c1872843241",
     "url": "/static/js/runtime-main.ae20bfb3.js"
   },
   {
-    "revision": "6f5d07f278a63519900f17646cd0d39b",
-    "url": "/static/media/chef.6f5d07f2.png"
+    "revision": "082d94894c00800235abfa42403e315f",
+    "url": "/static/media/chef.082d9489.png"
   },
   {
     "revision": "c06f3a3e804ebc7343949fdca3fdd7f8",
@@ -88,7 +88,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/wallet-connect.37f2bc6e.svg"
   },
   {
-    "revision": "2bb1eb4dba1c03a327571ed5359ecae4",
-    "url": "/static/media/wpp.2bb1eb4d.png"
+    "revision": "a835c52b8b25ae9d2a18f35a1fce068c",
+    "url": "/static/media/wpp.a835c52b.png"
   }
 ]);
