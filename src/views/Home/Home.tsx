@@ -13,8 +13,8 @@ const Home: React.FC = () => {
     <Page>
       <PageHeader
         icon={<img src={chef} height={120} />}
-        title="$HyFi is money that works for you."
-        subtitle="Stake Uniswap LP tokens to claim your very own HyFi!"
+        title="HyFi - The Future of Green Energy Exchange Platform"
+        subtitle="Stake Uniswap LP tokens and Earn HyFi Token"
       />
 
       <Container>
