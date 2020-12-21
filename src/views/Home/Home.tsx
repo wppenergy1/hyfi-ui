@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <PageHeader
         icon={<img src={chef} height={120} />}
         title="HyFi Exchange"
-        subtitle="The Future of Trading Green Energy Contracts"
+        subtitle="The Future of Green Energy Trading"
       />
 
       <Container>
