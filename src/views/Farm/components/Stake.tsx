@@ -21,7 +21,7 @@ import useUnstake from '../../../hooks/useUnstake'
 import { getBalanceNumber } from '../../../utils/formatBalance'
 import DepositModal from './DepositModal'
 import WithdrawModal from './WithdrawModal'
-import { getMasterChefAddress } from '../../../sushi/utils'
+import { getMasterChefContract } from '../../../sushi/utils'
 
 
 interface StakeProps {
@@ -34,8 +34,9 @@ const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName }) => {
   const [requestedApproval, setRequestedApproval] = useState(false)
 
   const sushi = useSushi()
-  const allowance = useAllowance(lpContract, getMasterChefAddress(sushi))
-  const { onApprove } = useApprove(lpContract, getMasterChefAddress(sushi))
+  const masterChefContract: Contract = getMasterChefContract(sushi)
+  const allowance = useAllowance(lpContract, masterChefContract)
+  const { onApprove } = useApprove(lpContract, masterChefContract)
 
   const tokenBalance = useTokenBalance(lpContract.options.address)
   const stakedBalance = useStakedBalance(pid)
