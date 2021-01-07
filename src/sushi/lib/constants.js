@@ -40,11 +40,11 @@ export const addressMap = {
 
 export const contractAddresses = {
   sushi: {
-    1: '0x3b74fC995685877028e1b78b185415fc8A86A1e7',
+    1: '0x79a1CA1768fE91867Be916EFa2b1630C7Fc83422',
     3: '0x128Ff926eF9Ece2826455b0312eD802D256E3bA7',
   },
   masterChef: {
-    1: '0xBd38C0F2c9cB7Be863BD8bAD30babd02DF398595',
+    1: '0x7c9b9f397Db2c6C573E5144454fD57F668276d33',
     3: '0xD8760d1D8Bfda48a91C46926b6646172e1D68341',
   },
   weth: {
@@ -112,10 +112,10 @@ export const supportedPools = [
   {
     pid: 2,
     lpAddresses: {
-      1: '0xa84704ea470fcbd38ae350b41cf6aa91cad71a0f',
+      1: '0xe3c2581a2fbf35822290dc7a84b630badb587aaf',
     },
     tokenAddresses: {
-      1: '0x3b74fc995685877028e1b78b185415fc8a86a1e7',
+      1: '0x79a1CA1768fE91867Be916EFa2b1630C7Fc83422',
     },
     name: 'HyFi',
     symbol: 'WPP-HYFI UNI-V2 LP',
@@ -125,10 +125,10 @@ export const supportedPools = [
   {
     pid: 3,
     lpAddresses: {
-      1: '0x7ca3ee7d12b8084252b0babfd98b2744fffde4af',
+      1: '0x189f558f0653ecb779420f52439c57d22de09a11',
     },
     tokenAddresses: {
-      1: '0x3b74fc995685877028e1b78b185415fc8a86a1e7',
+      1: '0x79a1CA1768fE91867Be916EFa2b1630C7Fc83422',
     },
     name: 'HyFi',
     symbol: 'HYFI-USDT UNI-V2 LP',
