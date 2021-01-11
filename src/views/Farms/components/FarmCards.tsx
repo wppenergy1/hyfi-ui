@@ -42,10 +42,7 @@ const FarmCards: React.FC = () => {
 
   const rows = farms.reduce<FarmWithStakedValue[][]>(
     (farmRows, farm, i) => {
-      if (
-        stakedValue[i] &&
-        farm.pid == 8
-      ) {
+      if (stakedValue[i] && farm.pid == 8) {
         stakedValue[i].totalWethValue = stakedValue[i - 1].totalWethValue
       }
       const farmWithStakedValue = {
@@ -171,10 +168,17 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <span>APY</span>
               <span>
                 {farm.apy
-                  ? `${farm.apy
-                      .times(new BigNumber(100))
-                      .toNumber()
-                      .toLocaleString('en-US')}%`
+                  ? `${
+                      farm.apy
+                        .times(new BigNumber(100))
+                        .toNumber()
+                        .toLocaleString('en-US') !== 'NaN'
+                        ? farm.apy
+                            .times(new BigNumber(100))
+                            .toNumber()
+                            .toLocaleString('en-US')
+                        : '0'
+                    }%`
                   : 'Loading ...'}
               </span>
               {/* <span>
