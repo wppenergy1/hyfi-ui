@@ -78,7 +78,7 @@ export const getPoolWeight = async (masterChefContract, pid) => {
 }
 
 export const getEarned = async (masterChefContract, pid, account) => {
-  return masterChefContract.methods.pendingPlutus(pid, account).call()
+  return masterChefContract.methods.pendingHyFi(pid, account).call()
 }
 
 export const getTotalLPWethValue = async (
