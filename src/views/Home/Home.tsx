@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <Page>
       <PageHeader
-        icon={<img src={chef} height={120} />}
+        icon={<img src={chef} height={100} />}
         title="HyFi Exchange"
         subtitle="The Future of Green Energy Trading"
       />
@@ -25,13 +25,13 @@ const Home: React.FC = () => {
         🏆<b>Pro Tip</b>: HyFi-ETH UNI-V2 LP token pool yields TWICE more token
         rewards per block.
       </StyledInfo> */}
-      <Spacer size="lg" />
+      {/* <Spacer size="lg" /> */}
       <div
         style={{
           margin: '0 auto',
         }}
       >
-        <Button text="See Pools" to="/farms" variant="secondary" />
+        <Button text="See Pools" to="/farms" size="sm" variant="secondary" />
       </div>
     </Page>
   )

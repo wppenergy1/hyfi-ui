@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Footer from '../Footer'
-import background from '../../assets/img/background.png'
+import background from '../../assets/img/background.jpg'
 
 const Page: React.FC = ({ children }) => (
   <StyledPage>
@@ -20,10 +20,11 @@ const StyledMain = styled.div`
 `
 
 const StyledBackground = styled.div`
+  background-image: url('${background}');
   background-color: #101113;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  // background-size: cover;
 `
 
 export default Page

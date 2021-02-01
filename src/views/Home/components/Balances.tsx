@@ -115,10 +115,18 @@ const Balances: React.FC = () => {
 
       <Card>
         <CardContent>
-          <Label text="Total Circulating HyFi Supply" />
-          <Value
-            value={totalSupply ? getBalanceNumber(totalSupply) : 'Locked'}
-          />
+          <StyledBalances>
+            <StyledBalance>
+              <SushiIcon />
+              <Spacer />
+              <div style={{ flex: 1 }}>
+                <Label text="Total Circulating HyFi Supply" />
+                <Value
+                  value={totalSupply ? getBalanceNumber(totalSupply) : 'Locked'}
+                />
+              </div>
+            </StyledBalance>
+          </StyledBalances>
         </CardContent>
         <Footnote>
           New rewards per block
@@ -131,9 +139,9 @@ const Balances: React.FC = () => {
 
 const Footnote = styled.div`
   font-size: 14px;
-  padding: 8px 20px;
-  color: ${(props) => props.theme.color.grey[400]};
-  border-top: solid 1px ${(props) => props.theme.color.grey[300]};
+  padding: 20px 20px;
+  color: ${(props) => props.theme.color.grey[1100]};
+  border-top: solid 1px ${(props) => props.theme.color.grey[1200]};
 `
 const FootnoteValue = styled.div`
   font-family: 'Roboto Mono', monospace;

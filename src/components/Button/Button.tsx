@@ -29,14 +29,14 @@ const Button: React.FC<ButtonProps> = ({
   let buttonColor: string
   switch (variant) {
     case 'secondary':
-      buttonColor = color.grey[500]
+      buttonColor = color.white
       break
     case 'green':
       buttonColor = color.grey[900]
       break
     case 'default':
     default:
-      buttonColor = color.primary.main
+      buttonColor = color.white
   }
 
   let boxShadow: string
@@ -106,7 +106,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   align-items: center;
   background-color: ${props => props.theme.color.grey[900]};
   border: 0;
-  border-radius: 12px;s
+  border-radius: 2px;
   color: ${props => !props.disabled ? props.color : `${props.color}55`};
   cursor: pointer;
   display: flex;
@@ -121,6 +121,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   width: 100%;
   &:hover {
     background-color: ${props => props.theme.color.grey[100]};
+    color: ${props => props.theme.color.primary.main};
   }
 `
 
@@ -129,7 +130,7 @@ const StyledLink = styled(Link)`
   color: inherit;
   display: flex;
   flex: 1;
-  height: 56px;
+  height: 36px;
   justify-content: center;
   margin: 0 ${props => -props.theme.spacing[4]}px;
   padding: 0 ${props => props.theme.spacing[4]}px;
