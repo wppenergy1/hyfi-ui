@@ -39,7 +39,7 @@ const App: React.FC = () => {
             <Farms />
           </Route>
           <Route path="/swap">
-            <Swap />
+         
           </Route>
         </Switch>
       </Router>
