@@ -11,9 +11,9 @@ const Nav: React.FC = () => {
       <StyledLink exact activeClassName="active" to="/farms">
         Pools
       </StyledLink>
-      <StyledLink exact activeClassName="active" to="/swap">
+      {/* <StyledLink exact activeClassName="active" to="/swap">
         Swap
-      </StyledLink>
+      </StyledLink> */}
       {/* <StyledAbsoluteLink
         href="https://www.yplutus.finance/about"
         target="_blank"
